@@ -1,3 +1,58 @@
+/* Top header area */
+.header-area .top-header-area {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #dedede; }
+.header-area .top-header-area .top-header-content {
+      position: relative;
+      z-index: 1;
+      height: 48px; }
+.header-area .top-header-area .top-header-content .top-breaking-news-area {
+        position: relative;
+        z-index: 1;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        min-width: 70%;
+        width: 70%; }
+.header-area .top-header-area .top-header-content .top-breaking-news-area .ticker {
+          width: 100%;
+          text-align: left;
+          position: relative;
+          overflow: hidden; }
+.header-area .top-header-area .top-header-content .top-breaking-news-area .ticker ul {
+            width: 100%;
+            position: relative;
+            z-index: 1; }
+.header-area .top-header-area .top-header-content .top-breaking-news-area .ticker ul li {
+              display: none;
+              width: 100%; }
+.header-area .top-header-area .top-header-content .top-breaking-news-area .ticker ul li a {
+                display: block;
+                font-size: 12px;
+                color: #656565;
+                height: 38px;
+                line-height: 38px; }
+.header-area .top-header-area .top-header-content .top-breaking-news-area .ticker ul li a:hover, .header-area .top-header-area .top-header-content .top-breaking-news-area .ticker ul li a:focus {
+                  color: #e20378; }
+.header-area .top-header-area .top-header-content .top-social-info-area {
+        position: relative;
+        z-index: 1; }
+.header-area .top-header-area .top-header-content .top-social-info-area a {
+          display: inline-block;
+          padding: 0 12px;
+          font-size: 14px;
+          color: #b0b0b0; }
+          @media only screen and (max-width: 767px) {
+.header-area .top-header-area .top-header-content .top-social-info-area a {
+              padding: 0 3px; } }
+.header-area .top-header-area .top-header-content .top-social-info-area a:hover, .header-area .top-header-area .top-header-content .top-social-info-area a:focus {
+            color: #e20378; }
+
+
+  /* NavBar Area */          
 .viral-news-main-menu {
     position: relative;
     width: 100%;
