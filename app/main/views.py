@@ -80,7 +80,6 @@ def news_category(id):
         return render_template('news_list.html', title=title, news_list=category_news, sources=sources)   
 
 
-
 @main.route('/topic/<query>')
 def news_topic(query):
     query_name_list = query.split(" ")
