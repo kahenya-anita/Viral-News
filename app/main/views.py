@@ -62,7 +62,7 @@ def breaking_news():
         return redirect(url_for('.news_topic', query=topic_name))
     
     else:
-        return render_template('news_list.html', title=title, news_list=breaking_news, sources=sources)    
+        return render_template('index.html', title=title, index=breaking_news, sources=sources)    
 
 
 @main.route('/categories/<id>')

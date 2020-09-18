@@ -1,5 +1,6 @@
 ## VIRAL NEWS
 
+![Screenshot from 2020-09-18 08-22-38](https://user-images.githubusercontent.com/62019551/93562881-88dc4d00-f98f-11ea-8221-82c80af9af9c.png)
 
 
 ## By Anita Kahenya

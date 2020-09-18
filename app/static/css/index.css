@@ -2,7 +2,7 @@
 
 
   
-/* Media Houses */
+/* Media Houses 
 .container{
     display: flexbox;
     align-content: flex-end;
@@ -17,7 +17,10 @@
     padding-top: 3%;
     padding-bottom: 3%;    
 }
-
+*/
+h1{
+    font-family: 'News Rocker', cursive;
+}
 .card-title{
     font-family: 'New Rocker', cursive;
     font-weight: bold;
@@ -25,6 +28,7 @@
 }
 .card-text{
     font-size: medium;
+    font-weight: italic;
     font-family: 'New Rocker', cursive;
-}  
+}
 
