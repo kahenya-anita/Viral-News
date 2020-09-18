@@ -135,11 +135,3 @@ def search_from_source(query, source):
 
     return search_topic_results
 
-
-def date_pipe(date):
-    dd=date[8:10]
-    mm=date[5:7]
-    yyyy=date[0:4]    
-    time=date[11:16]
-    date_string=dd+"/"+mm+"/"+yyyy+" - "+time+" hrs"
-    return date_string
