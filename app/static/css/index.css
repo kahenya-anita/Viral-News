@@ -1,51 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
 
- 
-.jumbotron{
-    height:400px;
-    position:relative;
-    width:800px;
-    margin:0 auto;
-    font-family: 'New Rocker', cursive;
-}
-.carousel-caption{
-    background-color: rgba(219, 190, 190, 0.5);
-    padding: 0.5em;
-    color: rgb(185, 19, 19);      
-}
-
-.carousel-caption p{
-    font-size: medium;
-}
-
-.carousel a:hover{
-    color: white;
-}
-
-.row.display-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.carousel-item{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    padding:25px 50px
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-.heading{
-    color: black;
-    font-family: 'New Rocker', cursive;
-}
-  
-
   
 /* Media Houses */
+.container{
+    display: flexbox;
+    align-content: flex-end;
+    float: left;
+}
 .card img{
     object-fit: cover;
     max-width: 100%;    
@@ -65,3 +27,4 @@
     font-size: medium;
     font-family: 'New Rocker', cursive;
 }  
+

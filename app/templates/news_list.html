@@ -4,6 +4,11 @@
 
 {% block content %}
 
-
+<!--searchbar-->
+{% if source_title %}
+ {{ search_title}}
+{% else search_article %}
+ {{ search_article}}
+{% endif %}
 
 {% endblock %}

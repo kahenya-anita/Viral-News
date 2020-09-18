@@ -2,7 +2,7 @@
 
 
 
-### By Anita Kahenya
+## By Anita Kahenya
 ###  16th september 2020
 
 ## Description
@@ -27,7 +27,7 @@
  * CSS
 
 ## Contact Details
-For any inqueries, further comments or questions you can reach me through my email (anitakahenya1@gmail.com)[AnitaKahenya]
+For any inqueries, further comments or questions you can reach me through my email [anitakahenya1@gmail.com](AnitaKahenya)
 
 
 ### [License](LICENSE)
