@@ -5,10 +5,83 @@
 {% block content %}
 
 <!--searchbar-->
-{% if source_title %}
- {{ search_title}}
-{% else search_article %}
- {{ search_article}}
-{% endif %}
+ <!--Content section-->
+ <div class="col-md-6">
+    <div class="jumbotron jumbotron2 news-sources">
+        
+        <div class="row display-flex">
+            <div class="col-xs-12 heading">
+                <h2>{{title}}</h2>
+            </div>
 
+            {% if news_list %}
+
+            {{ macro.displayNewsList(news_list) }} 
+
+            {% else %}
+
+            <div class="col-xs-12 text-center mt-4">
+                <h3>No articles found.</h3>
+            </div>
+
+            {% endif %}
+                                                
+        </div>
+    </div>
+</div>
+
+
+<!--Right column section-->
+<div class="col-xs-12 col-md-3">
+    <div class="jumbotron jumbotron3">
+        <form>
+            <div class="row">
+                <div class="col-xs-12">
+                    {% if source_title %}
+
+                    <label>Search {{source_title}}</label>
+                    <div class="input-group">
+                        <input type="text" name="from_source" class="form-control" placeholder="Search article" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><span class="fa fa-search"></span></button>
+                        </span>
+                    </div>
+
+                    {% else %}
+
+                    <label>Search articles</label>
+                    <div class="input-group">
+                        <input type="text" name="topic_query" class="form-control" placeholder="Search topic" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><span class="fa fa-search"></span></button>
+                        </span>
+                    </div>
+
+                    {% endif %}
+
+                </div>
+            </div>
+        </form>
+    </div>
+    {% if news_list %}
+
+    <div class="jumbotron jumbotron4">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Top Story | <span class="head-suffix text-muted">{{title}}</span></h2>
+                <p class="headline"><strong><a href="{{news_list[0].url}}" target="_blank">{{news_list[0].title}}</a></strong></p>
+                <h5>{{news_list[0].source_name}}</h5>
+                <h5>{{news_list[0].published_at}}</h5>
+                <p>{{news_list[0].description}}</p>
+                <p>{{news_list[0].content}}</p>
+                <p>- {{news_list[0].author}}</p>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+</div>
+
+</div>
+</div>
 {% endblock %}
