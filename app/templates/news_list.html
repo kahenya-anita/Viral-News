@@ -5,33 +5,6 @@
 {% block content %}
 
 <!--searchbar-->
- <!--Content section-->
- <div class="col-md-6">
-    <div class="jumbotron jumbotron2 news-sources">
-        
-        <div class="row display-flex">
-            <div class="col-xs-12 heading">
-                <h2>{{title}}</h2>
-            </div>
-
-            {% if news_list %}
-
-            {{ macro.displayNewsList(news_list) }} 
-
-            {% else %}
-
-            <div class="col-xs-12 text-center mt-4">
-                <h3>No articles found.</h3>
-            </div>
-
-            {% endif %}
-                                                
-        </div>
-    </div>
-</div>
-
-
-<!--Right column section-->
 <div class="col-xs-12 col-md-3">
     <div class="jumbotron jumbotron3">
         <form>
