@@ -47,11 +47,11 @@ def process_news_results(news_list):
         url = news_item.get('url')
         image_url = news_item.get('urlToImage')        
         published_at = news_item.get('publishedAt')        
-        published=date_pipe(published_at)
+        # published=date_pipe(published_at)
         description=news_item.get('description')
         content=news_item.get('content')
         
-        news_object = NewsArticle(source_name,author,title,url,image_url,published,description,content)
+        news_object = NewsArticle(source_name,author,title,url,image_url,published_at,description,content)
         news_results.append(news_object)        
         
     return news_results
